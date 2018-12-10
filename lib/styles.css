@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f4f3;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  height: 7rem;;
+}
+
+.nav-title {
+  font-size: 6em;
+  padding-top: .3rem;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.menu {
+  width: 8rem;
+  display: inline;
+}
+
+#search-div {
+  display: flex;
+  flex-direction: rows;
+  height: 20vh;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-field {
+  height: 6rem;
+  width: 70vw;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.24), 0 2px 4px rgba(0,0,0,0.48);
+}
+
+#search-submit {
+  height: 6rem;
+  border: 1px solid blue;
+  width: 10vw;
+}
+
+input[type="Submit"] {
+    font-size:24px;
+}
+input[type="text"] {
+    font-size:36px;
+}
