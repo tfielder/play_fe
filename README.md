@@ -2,6 +2,8 @@
 
 Front end for the [play_be](https://github.com/tfielder/play_be) project.
 
+See the live page here: https://tfielder.github.io/play_fe/
+
 ## To Run Locally
 
 1. Clone this repo
