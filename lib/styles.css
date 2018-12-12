@@ -3,6 +3,8 @@ body {
   background-color: #f2f4f3;
 }
 
+button.link { background:none;border:none; }
+
 #navbar {
   display: grid;
   grid-template-columns: 10% 90%;
@@ -40,6 +42,14 @@ body {
   height: 6rem;
   border: 1px solid blue;
   width: 10vw;
+}
+
+.add-to-playlist {
+  display: none;
+}
+
+.hidden {
+  display: none;
 }
 
 input[type="Submit"] {
