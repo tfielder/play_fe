@@ -4,84 +4,94 @@
 
   <meta charset="utf-8">
   <title>Play</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="./lib/styles.css">
+
+
   <link rel="stylesheet" type="text/css" href="./lib/reset.css">
+  <link rel="stylesheet" href="./lib/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 <body>
     <div id='navbar'>
-
-      <div>
-        <img src="./lib/assets/iconfinder_menu_1540174.svg" alt="menu" class='menu'/>
-
-      </div>
       <div>
 
-      <h1 class='nav-title'>Play</h1>
+      <h1 class='nav-title' id='nav-left'>P</h1>
+      <h1 class='nav-title' id='nav-right'>lay</h1>
       </div>
     </div>
 
-    <div id='search-div'>
-        <input type="text" name="artist" id='search-field'>
-        <input type="submit" value="Submit" id='search-submit'>
+<!-- SELECTION BUTTON GROUP -->
+
+    <div id='selection-div'>
+      <button class='main-button' id="main-search">Search</button>
+      <button class='main-button' id="main-favorites">Favorites</button>
+      <button class='main-button' id="main-playlists">Playlists</button>
     </div>
 
-    <div>
-      <table class='search-table'>
+
+
+<!-- SEARCH -->
+
+    <div id='search-div' class='hidden'>
+      <input type="text" name="artist" id='search-field' class='text-box'>
+      <input type="submit" value="Submit" id='search-submit' class='secondary-button'>
+    </div>
+
+    <div class='search-result-div hidden'>
+      <table class='table search-table'>
         <tr>
-          <th>Title</th>
-          <th>Artist</th>
-          <th>Album</th>
-          <th>Rating</th>
+          <th class='table-head'>Title</th>
+          <th class='table-head'>Artist</th>
+          <th class='table-head'>Favorite</th>
         </tr>
       </table>
     </div>
-    <div>
 
-    </div>
 
-    <div >
-      <table class='favorites-table'>
+<!-- Favorites -->
+
+    <div class='favorites-div hidden'>
+      <table class='table favorites-table'>
         <tr>
-          <th>Title</th>
-          <th>Artist</th>
-          <th>Album</th>
-          <th>Rating</th>
+          <th class='table-head'>Title</th>
+          <th class='table-head'>Artist</th>
+          <th class='table-head'>Rating</th>
+          <th class='table-head'></th>
+          <th class='table-head'></th>
         </tr>
       </table>
-
     </div>
-    <div>
-      <button id="create-playlist">Create Playlist</button>
+
+
+
+<!-- Playlists -->
+    <div class='playlist-div hidden'>
+
+    <div class='' id='create-playlist-div'>
+      <button id="create-playlist" class='medium-button'>Create Playlist</button>
     </div>
 
     <div class='create-playlist-div hidden'>
-        <input type="text" name="name" id='playlist-name'>
-        <input type="submit" value="Submit" id='playlist-submit'>
+      <input type="text" name="name" id='playlist-name' class='text-box'><br>
+      <input type="submit" value="Submit" id='playlist-submit' class='secondary-button'>
     </div>
 
-    <div>
-      <button id="show-playlist">Show Playlists</button>
-    </div>
-    <div class='add-to-playlist'>
-
-
-    <ul class='playlist-list '>
-
-    </ul>
-    </div>
-
-    <div>
-      <table class='playlist-table'>
+    <div class='playlist-list-div '>
+      <table class='playlist-list-table table'>
         <tr>
-          <th>Title</th>
-          <th>Artist</th>
-          <th>Album</th>
-          <th>Rating</th>
+          <th class='table-head'>Playlists</th>
         </tr>
       </table>
+    </div>
 
+    <div class='playlist-table-div hidden'>
+      <table class='playlist-table table'>
+        <tr>
+          <th class='table-head'>Title</th>
+          <th class='table-head'>Artist</th>
+          <th class='table-head'>Rating</th>
+        </tr>
+      </table>
     </div>
 
 
